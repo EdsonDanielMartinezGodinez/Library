@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <header class="head">
+        <h1>My Library</h1>
+        <button class= "botonP" id="boton">New Book</button>
+    </header>
+    <main>
+        <h2>My Book List</h2>
+        <section class="sectionBooks"></section>
+    </main>
+    <footer></footer>
+    <dialog class="dialog">
+        <form class="formulario">
+            <input class="inputsImportantes" type="text" name="title" placeholder="Book title..." required>
+            <input class="inputsImportantes" type="text" name="author" placeholder="Author Book..." required>
+            <input class="inputsImportantes" type="text" name="genre"  placeholder="Genre Book..." required>
+            <input class="inputsImportantes" type="Number" name="paginas" placeholder="Pages" required>
+            <input type="file" name="imagen" id="imagen" accept="image/*">
+            <div class="checBox">
+                <label for="checStatus">Read this book before?</label>
+                <input id="checStatus" type="checkbox" name="check">
+            </div>
+            <div class="dialogButtons">
+                <button class= "botonP" id="closedbutton" type="button">close</button>
+                <button class= "botonP" type="submit" id="submitBoton">send</button>
+            </div>
+        </form>
+    </dialog>
+</body>
+</html>

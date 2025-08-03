@@ -1,0 +1,228 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 3rem;
+    align-items: center;
+}
+.head{
+    background-color: rgb(255, 136, 0);
+    padding: 1rem 2rem;
+    box-shadow: 0px 3px 6px lightgray;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+}
+h1{
+    font-size: xx-large;
+    color: white;
+    font-weight: bolder;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    align-items: center;
+    gap: 2rem;
+}
+.sectionBooks{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    gap: 2rem;
+}
+.bookBody{
+    border-radius: 5px;
+    height: 20rem;
+    width: 17rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    border: 1px solid lightgray;
+    padding: 5px;
+    transition: 0.5s;
+    box-shadow: 1rem 1rem 1rem lightgrey;
+}
+.bookBody:hover{
+    transform: scale(1.1);
+}
+h2{
+    color: black;
+}
+.coverImage{
+    border-radius: 5px;
+    height: 15rem;
+    width: 10rem;
+    flex-grow: 1;
+}
+.titleCover{
+    flex-grow: 1;
+}
+.backgroundBlack{
+    background-color:rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+    z-index: 1;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pop{
+    background-color: white;
+    width: 25rem;
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    border-radius: 0.5rem;
+}
+.headPop{
+    background-color: rgb(255, 136, 0);
+    flex-grow: 1;
+    border-top-right-radius: 0.5rem;
+    border-top-left-radius: 0.5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 0.5rem;
+}
+.buttonX{
+    color: rgb(128, 68, 0);
+    background-color: white;
+    border: none;
+    border-radius: 50%;
+    height: 2rem;
+    width: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    font: x-large;
+
+}
+.buttonX:hover{
+    background-color: rgb(128, 68, 0);
+    color: white;
+}
+.bodyPop{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    flex-grow: 4;
+    border-bottom-right-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    gap: 0.5rem;
+}
+.buttonBody{
+    display: flex;
+    gap: 1rem;
+    justify-content: space-around;
+    border-top: 1px solid lightgray;
+    width: 100%;
+    flex-grow: 1;
+    padding: 0.5rem;
+}
+.contentBody{
+    display: flex;
+    flex-grow: 2;
+    height: 75%;
+    width: 100%;
+}
+.imageContainmerPop{
+    flex:1;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 2rem;
+}
+.informationPop{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.popUpButtons{
+    color: white;
+    background-color: rgb(128, 68, 0);
+    padding: 5px;
+    height: 5rem;
+    width: 7rem;
+    font-size: large;
+    font-weight: bolder;
+    border: none;
+    border-radius: 5px;
+}
+.informativeOBJT{
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+}
+.last{
+    border: none;
+}
+.popUpButtons:hover{
+    background-color: rgb(177, 100, 0);   
+}
+.botonP{
+    background-color: rgb(177, 100, 0);
+    color: white;
+    font-weight: bolder;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    font-size: large;
+    transition: 0.5s;
+}
+.botonP:hover{
+    background-color: rgb(128, 68, 0);
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0.5rem;
+    justify-content: center;
+    height: 25rem;
+    width: 20rem;
+}
+.dialog {
+  position: fixed; 
+  top: 10%;
+  left: 86%;
+  transform: translateX(-50%);
+  border: none;
+  border-radius: 1rem;
+}
+.checBox{
+    display: flex;
+    justify-content: space-around;
+    gap: 3rem;
+}
+.dialogButtons{
+    display: flex;
+    justify-content: space-around;
+}
+.inputsImportantes{
+    height: 2.5rem;
+    padding: 0.3rem;
+    border-radius: 0.5rem;
+    border: 1px solid lightgray;
+}
+#checStatus{
+    width: 2rem;
+    height: 2rem;
+}
